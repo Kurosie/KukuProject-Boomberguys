@@ -129,7 +129,6 @@ For example:
 
 This **key-based architecture** makes Unity development straightforward and modular. Since Unity simply reacts to key inputs, I did not need to modify the core input system or write any custom interfaces. This clean separation allows the gesture recognition and game logic to be developed and debugged independently—each system can be optimized without interfering with the other.
 
-![unity1](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/b6f3120a-5609-4b4a-8a85-0efe146fd9f6)
 
 
 ### 🧩 Python–Unity Communication: Keyboard Simulation vs. Network Sockets
