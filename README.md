@@ -29,7 +29,6 @@ In his seminal book *Where the Action Is*, Paul Dourish introduces the concept o
 
 This theory provided a philosophical foundation for *BomberGuys*. I came to realize that intuitive interaction must arise from the body itself, and that the player’s entire physicality should be treated as the interface—not just their fingertips. Inspired by Dourish, I approached bodily motion not just as an input method, but as a form of communication that conveys intent, allowing for more immersive and meaningful gameplay.
 
-![s2764351](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/889f8a40-15b2-483d-a117-fc0111c8ff35)
 
 
 ### 🔸 Myron Krueger – *Videoplace* (1985)
@@ -38,7 +37,6 @@ Myron Krueger’s *Videoplace* system was one of the first interactive installat
 
 In *Videoplace*, a participant steps into a space and sees their dynamic outline projected on the screen, instantly reacting with digital elements. This pioneering work demonstrated the expressive power of full-body motion as input and deeply influenced the vision behind *BomberGuys*. It validated the idea that the entire human body can serve as a controller and inspired me to explore how to break away from interface constraints and create a gesture-driven game system that feels immersive and creative.
 
-![0ee3f434-c14b-4bce-9c1d-660e7bb37167](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/54ebb603-6a4d-4fd9-ae19-06b06cd993a4)
 
 
 ---
@@ -61,7 +59,6 @@ This script is used to gather training image samples for each gesture. Upon laun
 
 To ensure a sufficient dataset for training, the script is set to collect up to 500 images per gesture (though it can be stopped manually at any point). During collection, a live video feed is displayed for calibration, and pressing “q” exits the process. This module lays the foundation by generating a class-labeled image dataset for downstream processing.
 
-![8a6034f094ea76530ff284a32e0fe09](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/9ecb213f-e826-4ec4-9133-c66fb295e4ae)
 
 
 ---
@@ -74,7 +71,6 @@ Each image is processed through the model to obtain landmark coordinates. If a h
 
 Each processed image is converted into a numerical feature vector and stored with its corresponding label. All data is serialized and saved (e.g., `data.pickle`), ready for model training.
 
-![6d07ca52584d6ebab280e04a396e296](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/6b16bdfd-0179-4b4b-9b3b-694849945c86)
 
 ---
 
@@ -88,7 +84,6 @@ The script trains the model, evaluates accuracy on the test set, and prints the 
 
 The trained model and label mapping dictionary are then saved (e.g., `model.p`) for use in the inference pipeline.
 
-![87a600934d95fb7a781c755ace79b35](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/9dc17fae-e45f-49e8-b5fd-bd924bdf55b5)
 
 
 ---
@@ -116,7 +111,6 @@ To assist with debugging, the predicted gesture label is overlayed on the live v
 
 By completing this loop—**from visual input to physical gesture to keyboard output**—the Python backend enables natural gesture control for the game, eliminating the need for traditional physical controllers.
 
-![未标题-1](https://git.arts.ac.uk/24009771/FinalProject-BomberGuy/assets/1290/1d76b1ca-80f1-48d0-8974-0139f9b893c4)
 
 
 ---
